@@ -7,7 +7,7 @@
 <meta name="description" content="Cherry sees your screen and uses your apps for you, with her very own cursor. Everything she thinks happens on your Mac. Try Cherry Pro free for 14 days.">
 <meta name="theme-color" content="#e8143a">
 <meta name="author" content="Scriptstate">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Cherry","operatingSystem":"macOS","applicationCategory":"ProductivityApplication","publisher":{"@type":"Organization","name":"Scriptstate"},"offers":{"@type":"Offer","price":"20","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Cherry","operatingSystem":"macOS","applicationCategory":"ProductivityApplication","publisher":{"@type":"Organization","name":"Scriptstate"},"offers":[{"@type":"Offer","name":"Cherry Pro monthly","price":"5","priceCurrency":"USD"},{"@type":"Offer","name":"Cherry Pro yearly","price":"20","priceCurrency":"USD"}]}</script>
 <meta property="og:title" content="Cherry · Your private AI helper for Mac">
 <meta property="og:description" content="She sees your screen, uses your apps with her own cursor, and never sends anything to the cloud.">
 <meta property="og:image" content="https://scriptstate.github.io/cherry/assets/icon.png?v=6">
@@ -396,6 +396,8 @@ kbd, code, .say-inline { font: 600 14px/1.4 ui-monospace, "SF Mono", Menlo, mono
 .plan { padding: 32px; display: flex; flex-direction: column; gap: 14px; }
 .plan .price { font-size: 44px; font-weight: 800; letter-spacing: -.03em; }
 .plan .price small { font-size: 17px; font-weight: 600; color: var(--ink-soft); }
+.plan .price-alt { margin: -6px 0 4px; font-size: 15px; color: var(--ink-soft); }
+.plan .price-alt strong { color: var(--ink); }
 .plan ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; flex: 1; }
 .plan li { display: flex; gap: 10px; color: var(--ink-soft); }
 .plan li::before { content: "✓"; color: var(--cherry); font-weight: 800; }
@@ -644,7 +646,7 @@ footer img { width: 28px; border-radius: 8px; }
       <div class="head center reveal">
         <p class="eyebrow">Pricing</p>
         <h2>One plan.<br><span class="gradient-text">Everything Cherry can do.</span></h2>
-        <p class="lead">Try every feature free for 14 days. Then it's $20 a month, and you can cancel any time.</p>
+        <p class="lead">Try every feature free for 14 days. Then it's $5 a month, or $20 for a whole year. Cancel any time.</p>
       </div>
       <div class="plans">
         <div class="plan glass reveal">
@@ -660,7 +662,8 @@ footer img { width: 28px; border-radius: 8px; }
         </div>
         <div class="plan pro glass reveal">
           <h3>Cherry Pro</h3>
-          <p class="price">$20<small>/month</small></p>
+          <p class="price">$5<small>/month</small></p>
+          <p class="price-alt">or <strong>$20 a year</strong>, save 67%</p>
           <ul>
             <li>Everything in Free</li>
             <li>Multi agent: all five helpers</li>
@@ -681,7 +684,7 @@ footer img { width: 28px; border-radius: 8px; }
     <div class="wrap">
       <div class="head center reveal"><p class="eyebrow">Questions</p><h2>Good to know.</h2></div>
       <div class="faq">
-        <details class="glass reveal"><summary>How much does Cherry cost?</summary><p>Cherry has a free plan, and Cherry Pro is $20 a month with a 14-day free trial. Cancel any time; safety features are always free.</p></details>
+        <details class="glass reveal"><summary>How much does Cherry cost?</summary><p>Cherry has a free plan, and Cherry Pro is $5 a month or $20 a year, with a 14-day free trial. Cancel any time; safety features are always free.</p></details>
         <details class="glass reveal"><summary>Does anything get sent to the internet?</summary><p>No. Cherry thinks with Apple's on-device model, and your iPhone talks to your Mac directly over your own network, encrypted. Only things you ask for go online, like opening a website, plus a quick check of your subscription.</p></details>
         <details class="glass reveal"><summary>Which Macs does she work on?</summary><p>Apple silicon MacBooks (M1 and newer) on macOS 26 or later, with Apple Intelligence turned on.</p></details>
         <details class="glass reveal"><summary>Can she do anything on my Mac?</summary><p>Everyday tasks work great, and many are done directly so they're fast and reliable. Long, complicated jobs in unfamiliar apps are harder, because she thinks with a small model on your Mac. That's when her helpers step in. She always asks before anything risky, and you can stop her instantly.</p></details>
